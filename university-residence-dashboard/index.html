@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Residence Dashboard</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Include Bootstrap -->
+  <style>
+    /* Basic CSS for visibility toggle and layout */
+    .content-section {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+    header {
+      background-color: #f8f9fa;
+      padding: 10px;
+      text-align: center;
+    }
+    button {
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>University Residence Dashboard</h1>
+    <button id="data-visualization-btn">Data Visualization</button>
+    <button id="room-management-btn">Room Management</button>
+    <button id="maintenance-requests-btn">Maintenance Requests</button>
+    <button id="alerts-btn">Alerts and Notifications</button>
+    <button id="theme-switcher">Switch Theme</button>
+  </header>
+  
+  <section id="data-visualization" class="content-section">
+    <h2>Data Visualization</h2>
+    <canvas id="occupancyChart" width="400" height="200"></canvas> <!-- Placeholder for Chart.js chart -->
+  </section>
+  
+  <section id="rooms" class="content-section">
+    <h2>Room Management</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Room Number</th>
+          <th>Status</th>
+          <th>Resident</th>
+          <th>Amenities</th>
+        </tr>
+      </thead>
+      <tbody id="roomList"></tbody>
+    </table>
+  </section>
+  
+  <section id="maintenance-requests" class="content-section">
+    <h2>Maintenance Requests</h2>
+    <div id="maintenanceRequests"></div>
+  </section>
+  
+  <section id="alerts" class="content-section">
+    <h2>Alerts and Notifications</h2>
+    <div id="alerts"></div>
+  </section>
+  
+  <script src="../js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+// styles.scss
+
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $primary-color;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: $secondary-color;
+  padding: 1rem;
+  text-align: center;
+}
+
+button {
+  background-color: white;
+  color: $primary-color;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #f1f1f1;
+}
+
+.theme-light {
+  background-color: white;
+  color: black;
+}
+
+.theme-dark {
+  background-color: black;
+  color: white;
+}
+
+section {
+  padding: 1rem;
+}
+
+#data-visualization {
+  margin-bottom: 2rem;
+}
+
+#rooms, #maintenance-requests, #alerts {
+  margin-bottom: 1rem;
+}

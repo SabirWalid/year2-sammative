@@ -1,0 +1,43 @@
+{
+    "rooms": [
+      {
+        "id": 1,
+        "resident": "John Doe",
+        "status": "occupied",
+        "amenities": ["WiFi", "AC"]
+      },
+      {
+        "id": 2,
+        "resident": "Jane Smith",
+        "status": "vacant",
+        "amenities": ["WiFi", "Heater"]
+      }
+    ],
+    "maintenanceRequests": [
+      {
+        "id": 1,
+        "roomId": 1,
+        "status": "pending",
+        "notes": "Leaky faucet"
+      },
+      {
+        "id": 2,
+        "roomId": 2,
+        "status": "completed",
+        "notes": "Broken window"
+      }
+    ],
+    "alerts": [
+      {
+        "id": 1,
+        "message": "Room inspection on Friday",
+        "type": "info"
+      },
+      {
+        "id": 2,
+        "message": "Maintenance deadline tomorrow",
+        "type": "warning"
+      }
+    ]
+  }
+  
